@@ -6,14 +6,14 @@
           search
         </igx-icon>
       </igx-prefix>
-      <input (click)="onSearchClicked" type="text" placeholder="--Ticker--" igxInput />
+      <input (keyup.enter)="onSearchClicked(searchInput.value)" #searchInput type="text" placeholder="--Ticker--" igxInput />
       <label igxLabel>Tickers</label>
     </igx-input-group>
     <div class="row-layout frame-42">
       <igx-list class="list">
-        <igx-list-item 
-          (click)="onItemClicked(item)"
+        <igx-list-item
           [isHeader]="false" *ngFor="let item of companyStockDataCompanyFeed"
+          (click)="onItemClicked(item)"
           [ngClass]="item.selected ? 'selected' : ''" #item
           igxRipple
           igxRippleTarget=".igx-list__item-content">
@@ -233,4 +233,5 @@
       </div>
     </div>
   </div>
+  <igx-toast #toast class="notification-toast" [displayTime]="2000"></igx-toast>
 </div>
