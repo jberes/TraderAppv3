@@ -128,6 +128,9 @@
   },
   "defaultProject": "trader-app-v-3",
   "cli": {
-    "schematicCollections": ["@angular-eslint/schematics"]
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": false
   }
 }
