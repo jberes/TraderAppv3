@@ -26,8 +26,12 @@ export class MainComponent implements OnInit {
   }
 
   public onItemClicked(item: any) {
-    this.country = item.country;
+    // this.country = item.country;
+    console.log("item is: " + item.country);
+
     console.log(item);
+    this.itemData = item;
+    console.log("itemData is: " + this.itemData.stock_market_cap);
 
     if (this.prevContact) {
       this.prevContact.selected = false;
@@ -39,6 +43,7 @@ export class MainComponent implements OnInit {
 
   public companyStockDataCompanyFeed: any [] = null;
   public fakeStockDataStockData: any [] = null;
+  public itemData: any;
   private prevContact: any;
   public country: string = 'Initial label value';
 

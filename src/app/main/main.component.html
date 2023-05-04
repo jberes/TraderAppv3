@@ -28,7 +28,7 @@
       </igx-list>
     </div>
   </div>
-  <div class="column-layout frame-41">
+  <div *ngIf="itemData" class="column-layout frame-41">
     <div class="row-layout frame-27">
       <div class="column-layout frame-26">
         <div class="column-layout frame-23">
@@ -125,10 +125,10 @@
           </div>
           <div class="row-layout frame-11">
             <p class="ig-typography__caption subtitle-7">
-              MARKET CAP
+              -- itemData.stock_market_cap --
             </p>
             <p class="ig-typography__caption subtitle-6">
-              --marketcap--
+              -- itemData.earnings_date --
             </p>
           </div>
         </div>
