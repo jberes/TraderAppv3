@@ -1,0 +1,83 @@
+<div class="column-layout trader-app-dashboard">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <igx-icon class="icon">
+        menu
+      </igx-icon>
+    </igx-navbar-action>
+    <igx-navbar-title class="navbar-content">
+      <h6 class="h6">
+        Screen Title
+      </h6>
+    </igx-navbar-title>
+    <igx-icon class="icon_1">
+      account_circle
+    </igx-icon>
+    <igx-icon class="icon_1">
+      notifications
+    </igx-icon>
+    <igx-icon class="icon_1">
+      settings
+    </igx-icon>
+    <igx-icon class="icon_1">
+      more_vert
+    </igx-icon>
+  </igx-navbar>
+  <div class="row-layout group">
+    <igx-nav-drawer [pin]="true" [pinThreshold]="1024" width="68px" class="nav-drawer">
+      <ng-template igxDrawerMini>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            dashboard
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            poll
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            history
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            trending_up
+          </igx-icon>
+        </div>
+      </ng-template>
+      <ng-template igxDrawer>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            dashboard
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            poll
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            history
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            trending_up
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+      </ng-template>
+    </igx-nav-drawer>
+    <div class="column-layout frame-17">
+      <h5 class="dashboard">
+        Dashboard
+      </h5>
+    </div>
+  </div>
+</div>

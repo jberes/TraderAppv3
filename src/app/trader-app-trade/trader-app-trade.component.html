@@ -1,0 +1,476 @@
+<div class="column-layout trader-app-trade">
+  <igx-navbar class="navbar">
+    <igx-navbar-action>
+      <igx-icon class="icon">
+        menu
+      </igx-icon>
+    </igx-navbar-action>
+    <igx-navbar-title class="navbar-content">
+      <h6 class="h6">
+        Screen Title
+      </h6>
+    </igx-navbar-title>
+    <igx-icon class="icon_1">
+      account_circle
+    </igx-icon>
+    <igx-icon class="icon_1">
+      notifications
+    </igx-icon>
+    <igx-icon class="icon_1">
+      settings
+    </igx-icon>
+    <igx-icon class="icon_1">
+      more_vert
+    </igx-icon>
+  </igx-navbar>
+  <div class="row-layout group">
+    <igx-nav-drawer [pin]="true" [pinThreshold]="1024" width="68px" class="nav-drawer">
+      <ng-template igxDrawerMini>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            dashboard
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            poll
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            history
+          </igx-icon>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            trending_up
+          </igx-icon>
+        </div>
+      </ng-template>
+      <ng-template igxDrawer>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            dashboard
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_3">
+            poll
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            history
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+        <div igxDrawerItem igxRipple class="nav-drawer-item">
+          <igx-icon class="icon_2">
+            trending_up
+          </igx-icon>
+          <span>Title goes here</span>
+        </div>
+      </ng-template>
+    </igx-nav-drawer>
+    <div class="row-layout frame-17">
+      <div class="column-layout frame-1">
+        <igx-input-group type="border" class="input">
+          <igx-prefix>
+            <igx-icon class="icon_4">
+              search
+            </igx-icon>
+          </igx-prefix>
+          <input type="text" placeholder="Search Symbol or Name" igxInput />
+          <label igxLabel>Label/Placeholder</label>
+        </igx-input-group>
+        <div class="row-layout frame-20">
+          <igx-list class="list">
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>MDT</span>
+              <span igxListLineSubTitle>Medtronic plc</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>AMZN</span>
+              <span igxListLineSubTitle>Amazon.com, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>SQM</span>
+              <span igxListLineSubTitle>Sociedad Química y Minera de Chile S.A.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>MULN</span>
+              <span igxListLineSubTitle>Mullen Automotive, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>ALB</span>
+              <span igxListLineSubTitle>Albemarle Corporation</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>AQN.TO</span>
+              <span igxListLineSubTitle>Algonquin Power &amp; Utilities Corp.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>LYFT</span>
+              <span igxListLineSubTitle>Lyft, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>SFR</span>
+              <span igxListLineSubTitle>Appreciate Holdings, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>NLST</span>
+              <span igxListLineSubTitle>Netlist, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>PG</span>
+              <span igxListLineSubTitle>The Procter &amp; Gamble Company</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+            <igx-list-item [isHeader]="false">
+              <span igxListLineTitle>MGRX</span>
+              <span igxListLineSubTitle>Mangoceuticals, Inc.</span>
+              <span igxListAction>
+                <igx-icon class="icon_2">
+                  keyboard_arrow_right
+                </igx-icon>
+              </span>
+            </igx-list-item>
+          </igx-list>
+        </div>
+      </div>
+      <div class="column-layout frame-16">
+        <div class="row-layout frame-34">
+          <div class="column-layout frame-47">
+            <div class="column-layout frame-22">
+              <div class="row-layout frame-31">
+                <p class="ig-typography__overline content">
+                  AMZN
+                </p>
+                <p class="ig-typography__caption text">
+                  ∙
+                </p>
+                <p class="ig-typography__overline content">
+                  NASDAQ
+                </p>
+              </div>
+              <h5 class="content">
+                Amazon.com, Inc.
+              </h5>
+            </div>
+            <div class="row-layout frame-32">
+              <h3 class="content">
+                106.96
+              </h3>
+              <div class="row-layout frame-33">
+                <h6 class="content_2">
+                  +3.15
+                </h6>
+                <h6 class="content_2">
+                  (+ 3.03%)
+                </h6>
+              </div>
+            </div>
+            <div class="column-layout frame-22">
+              <div class="row-layout frame-31_1">
+                <p class="content">
+                  After Hours:
+                </p>
+                <p class="ig-typography__subtitle-1 content">
+                  $107.15
+                </p>
+                <p class="ig-typography__subtitle-1 content_2">
+                  (+ 0.21%)
+                </p>
+                <p class="ig-typography__subtitle-1 content_2">
+                  +0.22
+                </p>
+              </div>
+              <div class="row-layout frame-33_1">
+                <p class="ig-typography__body-2 content">
+                  Closed:
+                </p>
+                <p class="ig-typography__body-2 content">
+                  Apr 21, 6:19:43 PM UTC-4
+                </p>
+                <p class="ig-typography__caption content">
+                  ∙
+                </p>
+                <p class="ig-typography__body-2 content">
+                  NASDAQ
+                </p>
+                <p class="ig-typography__body-2 content">
+                  ∙
+                </p>
+                <a href="url" target="_blank" class="ig-typography__body-1 hyperlink">
+                  Disclaimer
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row-layout frame-46">
+            <div class="column-layout frame-40">
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  PREVIOUS CLOSE
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  DAY RANGE
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  YEAR RANGE
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  MARKET CAP
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+            </div>
+            <div class="column-layout frame-40">
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  AVG VOLUME
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  P/E RATIO
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  DIVIDEND YIELD
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  $103.81
+                </p>
+              </div>
+              <div class="row-layout frame-38">
+                <p class="ig-typography__caption subtitle-2">
+                  PRIMARY EXCHANGE
+                </p>
+                <p class="ig-typography__caption subtitle-3">
+                  NASDAQ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column-layout frame-53">
+          <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="area" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+        </div>
+        <div class="row-layout frame-1">
+          <div class="column-layout stocks">
+            <div class="column-layout frame-31">
+              <p class="ig-typography__body-2 apple-inc">
+                Apple Inc.
+              </p>
+              <h6 class="content">
+                $165.02
+              </h6>
+            </div>
+            <div class="row-layout frame-35">
+              <p class="ig-typography__subtitle-2 aapl">
+                AAPL
+              </p>
+              <div class="row-layout frame-36">
+                <p class="ig-typography__subtitle-2 content">
+                  -1.12%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column-layout stocks">
+            <div class="column-layout frame-31">
+              <p class="ig-typography__body-2 apple-inc">
+                Tesla Inc.
+              </p>
+              <h6 class="content">
+                $165.08
+              </h6>
+            </div>
+            <div class="row-layout frame-35">
+              <p class="ig-typography__subtitle-2 aapl">
+                TSLA
+              </p>
+              <div class="row-layout frame-36_1">
+                <p class="ig-typography__subtitle-2 content">
+                  +1.28%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column-layout stocks">
+            <div class="column-layout frame-31">
+              <p class="ig-typography__body-2 apple-inc">
+                Microsoft Corp
+              </p>
+              <h6 class="content">
+                $285.76
+              </h6>
+            </div>
+            <div class="row-layout frame-35">
+              <p class="ig-typography__subtitle-2 aapl">
+                MSFT
+              </p>
+              <div class="row-layout frame-36">
+                <p class="ig-typography__subtitle-2 content">
+                  -0.12%
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="column-layout stocks">
+            <div class="column-layout frame-31">
+              <p class="ig-typography__body-2 apple-inc">
+                Alphabet Inc Class A
+              </p>
+              <h6 class="content">
+                $105.41
+              </h6>
+            </div>
+            <div class="row-layout frame-35">
+              <p class="ig-typography__subtitle-2 aapl">
+                GOOGL
+              </p>
+              <div class="row-layout frame-36_1">
+                <p class="ig-typography__subtitle-2 content">
+                  +0.11%
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column-layout frame-54">
+        <div class="column-layout frame-21">
+          <div class="column-layout frame-1">
+            <div class="row-layout frame-1">
+              <button igxButton="raised" igxRipple class="button">
+                BUY 100 AMZN @MKT
+              </button>
+              <button igxButton="raised" igxRipple class="button_1">
+                SELL 100 AMZN @MKT
+              </button>
+            </div>
+            <div class="row-layout frame-1">
+              <button igxButton="raised" igxRipple class="button">
+                BUY 100 AMZN @BID
+              </button>
+              <button igxButton="raised" igxRipple class="button_1">
+                SELL 100 AMZN @BID
+              </button>
+            </div>
+            <igx-combo type="border" [data]="financialBoxOfficeRevenue" valueKey="Franchise" displayKey="Franchise" [filterable]="true" [autoFocusSearch]="true" class="combo">
+              <label igxLabel>Label/Placeholder</label>
+            </igx-combo>
+            <igx-combo type="border" [data]="financialBoxOfficeRevenue" valueKey="Franchise" displayKey="Franchise" [filterable]="true" [autoFocusSearch]="true" class="combo">
+              <label igxLabel>Label/Placeholder</label>
+            </igx-combo>
+          </div>
+        </div>
+        <div class="column-layout frame-29">
+          <p class="content">
+            PENDING ORDERS
+          </p>
+          <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Bool" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+          </igx-grid>
+        </div>
+        <div class="column-layout frame-29">
+          <p class="content">
+            POSITIONS
+          </p>
+          <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Text" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Bool" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+            <igx-column header="Number" [sortable]="true" [selectable]="false"></igx-column>
+          </igx-grid>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
