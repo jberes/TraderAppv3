@@ -8,11 +8,17 @@ import { CompanyStockDataService } from '../services/company-stock-data.service'
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  onSearchClicked() {
-    // When the Input is clicked, I want to grab the "Ticker" from the input
-    // and 'jump' to the corresponding row in the List and select it, thus firing the 
-    // onItemClicked event 
-    throw new Error('Method not implemented.');
+  onSearchClicked(value: string) {
+    let item = this.companyStockDataCompanyFeed.find(item => item['stock_symbol'] === value);
+    // Check for partial matches if no full matches found
+    if (!item) {
+      item = this.companyStockDataCompanyFeed.find(item => item['stock_symbol'].startsWith(value));
+    }
+    if (item) {
+      this.onItemClicked(item);
+    } else {
+      alert('No matching stock symbol found');
+    }
   }
 
   public onItemClicked(item: any) {
@@ -27,8 +33,8 @@ export class MainComponent implements OnInit {
     this.cdr.detectChanges();
   }
 
-  public companyStockDataCompanyFeed: any = null;
-  public fakeStockDataStockData: any = null;
+  public companyStockDataCompanyFeed: any [] = null;
+  public fakeStockDataStockData: any [] = null;
   private prevContact: any;
   public country: string = 'Initial label value';
 
