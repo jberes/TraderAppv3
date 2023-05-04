@@ -15,7 +15,7 @@
           <span igxListLineTitle>{{ item.stock_symbol }}</span>
           <span igxListLineSubTitle>{{ item.stock_name }}</span>
           <span igxListAction>
-            <igx-icon class="icon-11">
+            <igx-icon class="icon-7">
               keyboard_arrow_right
             </igx-icon>
           </span>
@@ -143,7 +143,7 @@
       </div>
     </div>
     <div class="column-layout frame-7">
-      <igx-category-chart [dataSource]="fakeStockDataStockData" class="category-chart"></igx-category-chart>
+      <igx-category-chart [dataSource]="fakeStockDataStockData" chartType="line" includedProperties="Month,Open,Close" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
     </div>
     <div class="row-layout frame-40">
       <div class="column-layout stocks-1">
