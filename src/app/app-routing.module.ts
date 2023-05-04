@@ -4,15 +4,18 @@ import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './error-routing/not-found/not-found.component';
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 import { ErrorRoutingModule } from './error-routing/error-routing.module';
-import { TraderAppDashboardComponent } from './trader-app-dashboard/trader-app-dashboard.component';
-import { TraderAppTradeComponent } from './trader-app-trade/trader-app-trade.component';
+import { MainComponent } from './main/main.component';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+import { DashboardviewComponent } from './dashboardview/dashboardview.component';
+import { Fdc3playgroundComponent } from './fdc3playground/fdc3playground.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'trader-app-trade', pathMatch: 'full' },
+  { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'trader-app-dashboard', component: TraderAppDashboardComponent, data: { text: 'trader-app-dashboard' } },
-  { path: '', redirectTo: 'trader-app-trade', pathMatch: 'full' }, { path: 'trader-app-trade', component: TraderAppTradeComponent, data: { text: 'trader-app-trade' } },
-  { path: 'master-view', loadChildren: () => import('./master-view/master-view.module').then(m => m.MasterViewModule) },
+  { path: '', redirectTo: 'main', pathMatch: 'full' }, { path: 'main', component: MainComponent, data: { text: 'main' } },
+  { path: 'dashboards', component: DashboardsComponent, data: { text: 'dashboards' } },
+  { path: 'dashboardview', component: DashboardviewComponent, data: { text: 'dashboardview' } },
+  { path: 'fdc3playground', component: Fdc3playgroundComponent, data: { text: 'fdc3playground' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

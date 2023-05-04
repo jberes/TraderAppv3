@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DashboardsListService } from '../../services/dashboards-list.service';
+import { DashboardsListService } from '../services/dashboards-list.service';
 
 @Component({
   selector: 'app-dashboards',
