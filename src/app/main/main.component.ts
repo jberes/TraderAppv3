@@ -1,6 +1,7 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { FakeStockDataService } from '../services/fake-stock-data.service';
 import { CompanyStockDataService } from '../services/company-stock-data.service';
+import { IgxToastComponent } from 'igniteui-angular';
 
 @Component({
   selector: 'app-main',
@@ -8,6 +9,9 @@ import { CompanyStockDataService } from '../services/company-stock-data.service'
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
+  @ViewChild(IgxToastComponent)
+  protected toast: IgxToastComponent;
+
   onSearchClicked(value: string) {
     let item = this.companyStockDataCompanyFeed.find(item => item['stock_symbol'] === value);
     // Check for partial matches if no full matches found
@@ -17,7 +21,7 @@ export class MainComponent implements OnInit {
     if (item) {
       this.onItemClicked(item);
     } else {
-      alert('No matching stock symbol found');
+      this.toast.open(`No ticker found with ${value} symbol!`);
     }
   }
 

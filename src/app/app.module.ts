@@ -4,7 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { IgxInputGroupModule, IgxIconModule, IgxListModule, IgxButtonModule, IgxRippleModule, IgxCardModule, IgxAvatarModule, IgxNavbarModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import { IgxInputGroupModule, IgxIconModule, IgxListModule, IgxButtonModule, IgxRippleModule, IgxCardModule, IgxAvatarModule, IgxNavbarModule, IgxNavigationDrawerModule, IgxToastModule } from 'igniteui-angular';
 import { IgxCategoryChartModule, IgxFinancialChartModule } from 'igniteui-angular-charts';
 import { FormsModule } from '@angular/forms';
 import { DashboardsComponent } from './dashboards/dashboards.component';
@@ -35,6 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     IgxCardModule,
     IgxAvatarModule,
     IgxNavbarModule,
+    IgxToastModule,
     IgxNavigationDrawerModule,
     IgxFinancialChartModule,
     HttpClientModule
