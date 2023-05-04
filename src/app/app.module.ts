@@ -3,35 +3,39 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TraderAppDashboardComponent } from './trader-app-dashboard/trader-app-dashboard.component';
-import { IgxNavbarModule, IgxIconModule, IgxNavigationDrawerModule, IgxInputGroupModule, IgxListModule, IgxButtonModule, IgxRippleModule, IgxComboModule, IgxGridModule } from 'igniteui-angular';
-import { FormsModule } from '@angular/forms';
-import { TraderAppTradeComponent } from './trader-app-trade/trader-app-trade.component';
+import { MainComponent } from './main/main.component';
+import { IgxInputGroupModule, IgxIconModule, IgxListModule, IgxButtonModule, IgxRippleModule, IgxCardModule, IgxAvatarModule, IgxNavbarModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
+import { FormsModule } from '@angular/forms';
+import { DashboardsComponent } from './dashboards/dashboards.component';
+import { DashboardviewComponent } from './dashboardview/dashboardview.component';
+import { Fdc3playgroundComponent } from './fdc3playground/fdc3playground.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TraderAppDashboardComponent,
-    TraderAppTradeComponent
+    MainComponent,
+    DashboardsComponent,
+    DashboardviewComponent,
+    Fdc3playgroundComponent
   ],
   imports: [
     BrowserModule,
     HammerModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    IgxNavbarModule,
-    IgxIconModule,
-    IgxNavigationDrawerModule,
-    FormsModule,
     IgxInputGroupModule,
+    IgxIconModule,
     IgxListModule,
-    IgxCategoryChartModule,
     IgxButtonModule,
     IgxRippleModule,
-    IgxComboModule,
-    IgxGridModule,
+    IgxCategoryChartModule,
+    FormsModule,
+    IgxCardModule,
+    IgxAvatarModule,
+    IgxNavbarModule,
+    IgxNavigationDrawerModule,
     HttpClientModule
   ],
   providers: [],

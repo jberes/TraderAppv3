@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FakeStockDataService } from '../../services/fake-stock-data.service';
-import { CompanyStockDataService } from '../../services/company-stock-data.service';
+import { FakeStockDataService } from '../services/fake-stock-data.service';
+import { CompanyStockDataService } from '../services/company-stock-data.service';
 
 @Component({
   selector: 'app-main',
