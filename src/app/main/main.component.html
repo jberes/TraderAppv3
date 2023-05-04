@@ -6,12 +6,17 @@
           search
         </igx-icon>
       </igx-prefix>
-      <input type="text" placeholder="--Ticker--" igxInput />
+      <input (click)="onSearchClicked" type="text" placeholder="--Ticker--" igxInput />
       <label igxLabel>Tickers</label>
     </igx-input-group>
     <div class="row-layout frame-42">
       <igx-list class="list">
-        <igx-list-item [isHeader]="false" *ngFor="let item of companyStockDataCompanyFeed">
+        <igx-list-item 
+          (click)="onItemClicked(item)"
+          [isHeader]="false" *ngFor="let item of companyStockDataCompanyFeed"
+          [ngClass]="item.selected ? 'selected' : ''" #item
+          igxRipple
+          igxRippleTarget=".igx-list__item-content">
           <span igxListLineTitle>{{ item.stock_symbol }}</span>
           <span igxListLineSubTitle>{{ item.stock_name }}</span>
           <span igxListAction>
@@ -99,7 +104,7 @@
               COUNTRY
             </p>
             <p class="ig-typography__caption subtitle-6">
-              --country--
+              <label>{{ country }}</label>
             </p>
           </div>
           <div class="row-layout frame-11">
