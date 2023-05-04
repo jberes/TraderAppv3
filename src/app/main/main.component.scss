@@ -147,7 +147,7 @@
 }
 .frame-17 {
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-end;
   align-content: flex-start;
   position: relative;
   width: 60%;
@@ -241,7 +241,7 @@
   color: hsla(var(--ig-gray-700));
   position: relative;
 }
-.icon-11 {
+.icon-7 {
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -290,6 +290,10 @@
   flex-basis: 0;
 }
 .category-chart {
+  --brushes: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --outlines: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --marker-brushes: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
+  --marker-outlines: #56b4e9 #009e73 #f0e442 #d55e00 #d600fe #00499f #e69f00 #000000 #84f0df #735656;
   position: relative;
   align-self: stretch;
   flex-grow: 1;

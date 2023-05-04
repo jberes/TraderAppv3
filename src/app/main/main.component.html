@@ -6,7 +6,7 @@
           search
         </igx-icon>
       </igx-prefix>
-      <input type="text" placeholder="{{Ticker}}" igxInput />
+      <input type="text" placeholder="--Ticker--" igxInput />
       <label igxLabel>Tickers</label>
     </igx-input-group>
     <div class="row-layout frame-42">
@@ -15,97 +15,7 @@
           <span igxListLineTitle>{{ item.stock_symbol }}</span>
           <span igxListLineSubTitle>{{ item.stock_name }}</span>
           <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>AMZN</span>
-          <span igxListLineSubTitle>Amazon.com, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>SQM</span>
-          <span igxListLineSubTitle>Sociedad Química y Minera de Chile S.A.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>MULN</span>
-          <span igxListLineSubTitle>Mullen Automotive, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>ALB</span>
-          <span igxListLineSubTitle>Albemarle Corporation</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>AQN.TO</span>
-          <span igxListLineSubTitle>Algonquin Power &amp; Utilities Corp.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>LYFT</span>
-          <span igxListLineSubTitle>Lyft, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>SFR</span>
-          <span igxListLineSubTitle>Appreciate Holdings, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>NLST</span>
-          <span igxListLineSubTitle>Netlist, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>PG</span>
-          <span igxListLineSubTitle>The Procter &amp; Gamble Company</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
-              keyboard_arrow_right
-            </igx-icon>
-          </span>
-        </igx-list-item>
-        <igx-list-item [isHeader]="false">
-          <span igxListLineTitle>MGRX</span>
-          <span igxListLineSubTitle>Mangoceuticals, Inc.</span>
-          <span igxListAction>
-            <igx-icon class="icon-11">
+            <igx-icon class="icon-7">
               keyboard_arrow_right
             </igx-icon>
           </span>
@@ -189,7 +99,7 @@
               COUNTRY
             </p>
             <p class="ig-typography__caption subtitle-6">
-              &#123;&#123;country&#125;&#125;
+              --country--
             </p>
           </div>
           <div class="row-layout frame-11">
@@ -197,7 +107,7 @@
               SECTOR
             </p>
             <p class="ig-typography__caption subtitle-6">
-              &#123;&#123;sector&#125;&#125;
+              --sector--
             </p>
           </div>
           <div class="row-layout frame-11">
@@ -205,7 +115,7 @@
               INDUSTRY
             </p>
             <p class="ig-typography__caption subtitle-6">
-              &#123;&#123;industry&#125;&#125;
+              --industry--
             </p>
           </div>
           <div class="row-layout frame-11">
@@ -213,7 +123,7 @@
               MARKET CAP
             </p>
             <p class="ig-typography__caption subtitle-6">
-              &#123;&#123;marketcap&#125;&#125;
+              --marketcap--
             </p>
           </div>
         </div>
@@ -233,7 +143,7 @@
       </div>
     </div>
     <div class="column-layout frame-7">
-      <igx-category-chart [dataSource]="fakeStockDataStockData" chartType="area" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+      <igx-category-chart [dataSource]="fakeStockDataStockData" chartType="line" includedProperties="Month,Open,Close" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
     </div>
     <div class="row-layout frame-40">
       <div class="column-layout stocks-1">

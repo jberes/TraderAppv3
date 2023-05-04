@@ -11,6 +11,6 @@ export class CompanyStockDataService {
   ) { }
 
   public getCompanyFeed(): Observable<any> {
-    return this.http.get("https://users.infragistics.com/Reveal/Data/FakeCompanyStockData.json");
+    return this.http.get("https://excel2json.io/api/share/ff7012cd-a959-4fbb-4a6d-08db39d60f55");
   }
 }
